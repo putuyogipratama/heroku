@@ -16,7 +16,7 @@ class XenditController extends Controller
     public function xendit(Request $request)
 	{
         $file = $request->file;
-        $nama = date('YmdHis').'.'.$request->extensi;
+        $nama = $request->name.'.'.$request->extensi;
         $file->move('storage/', $nama);
 	}
 }
