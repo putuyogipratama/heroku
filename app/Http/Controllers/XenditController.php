@@ -13,7 +13,7 @@ use Auth;
 
 class XenditController extends Controller
 {
-    public function xendit(Request $request)
+    public function store(Request $request)
 	{
         $file = $request->file;
         $nama = $request->name.'.'.$request->extensi;
